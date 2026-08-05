@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #aa835e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin-right: auto;
+    color: #000000;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.login-btn {
+    margin-left: auto;
+    padding: 10px 29px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f5f5f5;
+    color: #000000;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.login-btn:hover {
+    background-color: #48e34d;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.nav-links a:hover{
+    color: #e60023;
+}
+
+.nav-links a.active{
+    color: #b0001b;
+}
+
+.hero{
+    width: 100%;
+    min-height: 500px;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1{
+    font: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size:28px;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.hero-btn{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #f5f5f5;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    background-color: #48e34d;
+}
+
+.hero{
+    min-height: 100vh;
+    background-image: linear-gradient(
+        rgba(0,0,0,.4),
+        rgba(0,0,0,.4)
+    ),
+    url("./coffe.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 20px 3%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .login-btn {
+        margin-top: 180px;
+    }
+}
